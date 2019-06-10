@@ -1,3 +1,21 @@
+'''
+Regular linked list has a pointer to the root node or first node in the list.
+Each node has a piece of data and a pointer to next node.
+
+With doubly linked list, every node has 3 parts: 
+- pointer to its previous node
+- pointer to next node
+- and a piece of data
+This enables to us navigate either forward or backward through the linked list.
+
+Adavantages over regukar(singly) linked lists:
+- Can iterate the list in either direction
+- Can delete a node without iterating through the entire list(if given a pointer to the node)
+  Whereas with single linked list, you'd have to iterate through all the list.
+  However, this means doubly use up more memory and bit more coding invole as
+  each time you insert or delete a node, you also have to update prev/ next node. 
+'''
+
 """Each ListNode holds a reference to its previous node
 as well as its next node in the List."""
 class ListNode:
