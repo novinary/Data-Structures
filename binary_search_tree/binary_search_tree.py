@@ -36,7 +36,7 @@ class BinarySearchTree:
     if target < self.value:
       if self.left is None:
         return False
-      return self.left.contain(target)
+      return self.left.contains(target)
     elif target > self.value:
       if self.right is None:
         return False
@@ -63,9 +63,9 @@ class BinarySearchTree:
       self.left.for_each(cb)
 
 #testing
-bst = BinarySearchTree(5)
-bst.insert(6)
-print(bst.contains(5))
+bst = BinarySearchTree(66)
+bst.insert(5)
+print(bst.contains(66))
 print(bst.get_max())
 
 def cb(value):
