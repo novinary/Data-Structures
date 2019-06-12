@@ -77,7 +77,7 @@ class DoublyLinkedList:
   '''
 
   def add_to_head(self, value):
-  # If there's a head node then we know there's one node at least in the list so we assign the head node previous node to new node
+  # If there's a head node then we know there's one node at least in the list so we assign the head node's previous node to new node
     new_node = ListNode(value)
     if self.head:                  
       self.head.insert_before(value)
