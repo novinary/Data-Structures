@@ -33,7 +33,9 @@ class BinarySearchTree:
 # contains searches the binary search tree for the input value,
 # returning a boolean indicating whether the value exists in the tree or not.
   def contains(self, target):
+    # Check target val < current nodes val
     if target < self.value:
+      # if no left child return false else return the target value from left child
       if self.left is None:
         return False
       return self.left.contains(target)
@@ -56,6 +58,7 @@ class BinarySearchTree:
 # executing the passed-in callback function on each tree node value.
 # There is a myriad of ways to perform tree traversal; in this case any of them should work.
   def for_each(self, cb):
+    # run cb for each node
     cb(self.value)
     if self.right != None:
       self.right.for_each(cb)
